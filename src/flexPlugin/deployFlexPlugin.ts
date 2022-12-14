@@ -45,7 +45,7 @@ const runScriptInPlugins = async (attributes:any, script: any) => {
                 
         await exec(script({ absolutePath, envs, exec}));
 
-    } catch (err){
+    } catch (err: any){
 
         throw new Error(err);
 

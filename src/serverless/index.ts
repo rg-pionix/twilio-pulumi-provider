@@ -2,7 +2,7 @@ import * as pulumi from "@pulumi/pulumi";
 import { isEqual } from "lodash";
 import { getAPI, cleanObject } from "../utils/api";
 import { transformServerlessAttributes, getTwilioClient } from "../utils";
-import { hashElement } from 'folder-hash';
+import { hashElement } from "folder-hash";
 
 export interface WorkspaceArgs {
     attributes: pulumi.Input<any>;
